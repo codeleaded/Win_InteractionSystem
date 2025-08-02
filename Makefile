@@ -13,11 +13,11 @@ OBJS = $(patsubst $(SRC_DIR)/%.c, $(BUILD_DIR)/%.o, $(SRCS))
 
 TARGET = $(BUILD_DIR)/Main
 
-all: 
-	$(CC) $(CFLAGS) $(INCLUDES) ./$(SRC_DIR)/Main.c -o ./$(TARGET) $(LDFLAGS) 
+all:
+	$(CC) $(CFLAGS) $(INCLUDES) ./$(SRC_DIR)/Main.c -o ./$(TARGET) $(LDFLAGS)
 
 exe:
-	./$(TARGET) /home/codeleaded/Hecke/C/
+	./$(TARGET)
 
 clean:
 	rm -rf $(BUILD_DIR)/*
